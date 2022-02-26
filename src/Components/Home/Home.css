@@ -1,0 +1,30 @@
+.home{
+    margin-top: 80px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.card-container{
+    /* width: 10%; */
+    background-color: rgba(253, 246, 246, 0.863);
+    padding-top: 1px;
+}
+.my-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    /* box-shadow: 10px 5px 5px rgb(230, 224, 224); */
+    transition: transform .5s ease-in-out;
+    /* border: 2px solid red; */
+}
+
+.my-card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px rgb(230, 224, 224);
+}

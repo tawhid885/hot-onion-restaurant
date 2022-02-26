@@ -1,0 +1,42 @@
+/* header css  */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo-section{
+    margin-left: 15px;
+}
+
+.logo-img{
+    width: 200px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+ul li .cart-icon{
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ul li a.signup{
+    background-color: red;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+}
