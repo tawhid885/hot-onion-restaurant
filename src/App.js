@@ -1,20 +1,24 @@
-import './App.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
-import Header from "./Components/Header/Header";
-import Banner from './Components/Banner/Banner';
-import Lunch from './Components/Lunch/Lunch';
+import Header from "./Components/Header/Header";import Lunch from './Components/Lunch/Lunch';
 import Breakfast from './Components/Breakfast/Breakfast';
 import Dinner from './Components/Dinner/Dinner';
+import AuthProvider from "./Context/AuthProvider";
+import Detail from './Components/Detail/Detail';
+import Cart from './Components/Cart/Cart';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Footer from './Components/Footer/Footer';
+import Shipping from './Components/Shipping/Shipping';
+
 
 function App() {
   return (
     <div>
+    <AuthProvider>
       <BrowserRouter>
       <Header></Header>
-      <Banner></Banner>
       <Routes>
         <Route path="/" element={<Navigate to="/home"/>}/>
         <Route path="/home" element={<Home></Home>}/>
@@ -23,8 +27,13 @@ function App() {
         <Route path="/breakfast" element={<Breakfast></Breakfast>}/>
         <Route path="/lunch" element={<Lunch></Lunch>}/>
         <Route path="/dinner" element={<Dinner></Dinner>}/>
+        <Route path="/details/:tag/:id" element={<Detail></Detail>}/>
+        <Route path="/cart" element={<PrivateRoute><Cart></Cart></PrivateRoute>}/>
+        <Route path="/shipping" element={<PrivateRoute><Shipping></Shipping></PrivateRoute>}/>
       </Routes>
       </BrowserRouter>
+      <Footer></Footer>
+    </AuthProvider>
     </div>
   );
 }

@@ -34,9 +34,10 @@ ul li a{
     cursor: pointer;
 }
 
-ul li a.signup{
+ul li a.signup, .logout{
     background-color: red;
     padding: 6px;
     border-radius: 8px;
     color: white;
+    border: none;
 }

@@ -1,8 +1,8 @@
 [
-    {"key":1, "name":"kala vuna","des":"kata khali is famous for kalavuna.you should test it but before going to restaurnat you need to make sure that you are appetite","price":90,"img":"images/lunch/lunch1.png"},
-    {"key":2, "name":"kacci biriyani","des":"kolkata birini house is famous for kacci.you should test it but before going to restaurnat you need to make sure that you are appetite","price":150,"img":"images/lunch/lunch2.png"},
-    {"key":3, "name":"None grill","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":120,"img":"images/lunch/lunch3.png"}, 
-    {"key":4, "name":"khicuri grill","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":160,"img":"images/lunch/lunch4.png"}, 
-    {"key":5, "name":"vat grill","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":100,"img":"images/lunch/lunch5.png"}, 
-    {"key":6, "name":"teheri","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":85,"img":"images/lunch/lunch6.png"} 
+    {"key":1,"tag":"Lunch/1", "name":"kala vuna","des":"kata khali is famous for kalavuna.you should test it but before going to restaurnat you need to make sure that you are appetite","price":90,"img":"images/lunch/lunch1.png"},
+    {"key":2,"tag":"Lunch/2", "name":"kacci biriyani","des":"kolkata birini house is famous for kacci.you should test it but before going to restaurnat you need to make sure that you are appetite","price":150,"img":"images/lunch/lunch2.png"},
+    {"key":3,"tag":"Lunch/3", "name":"None grill","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":120,"img":"images/lunch/lunch3.png"}, 
+    {"key":4,"tag":"Lunch/4", "name":"khicuri grill","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":160,"img":"images/lunch/lunch4.png"}, 
+    {"key":5,"tag":"Lunch/5", "name":"vat grill","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":100,"img":"images/lunch/lunch5.png"}, 
+    {"key":6,"tag":"Lunch/6", "name":"teheri","des":"kajla grill house is famous for grill.you should test it but before going to restaurnat you need to make sure that you are appetite","price":85,"img":"images/lunch/lunch6.png"} 
 ]

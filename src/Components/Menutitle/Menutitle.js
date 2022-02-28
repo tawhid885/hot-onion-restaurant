@@ -20,10 +20,12 @@ const Menutitle = () => {
         navigate(redirect_dinner);
     }
     return (
-        <div className="menu-title">
-                <p onClick={breakfastControl}>Breakfast</p>
-                <p onClick={lunchControl}>Lunch</p>
-                <p onDoubleClick={dinnerControl}>Dinner</p>
+        <div>
+            <div className="menu-title">
+                    <p onClick={breakfastControl}>Breakfast</p>
+                    <p onClick={lunchControl}>Lunch</p>
+                    <p onDoubleClick={dinnerControl}>Dinner</p>
+            </div>
         </div>
     );
 };
