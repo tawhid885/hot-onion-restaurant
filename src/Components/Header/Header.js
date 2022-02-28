@@ -12,6 +12,7 @@ const Header = () => {
     const {user, logOut} = useAuth();
     const handleLogOut=()=>{
         logOut();
+        localStorage.clear();
         navigate("/login");
     }
     return (

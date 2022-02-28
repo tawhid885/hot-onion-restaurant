@@ -29,7 +29,7 @@ const Shipping = () => {
                         type="text" placeholder='Business Name'{...register("business", { required: true })} />
 
                         <input className="form-field"
-                        type="text" placeholder='Add delivery instructor'{...register("delivery_instructor", { required: true })} />
+                        type="text" placeholder='Add delivery insdivuctor'{...register("delivery_insdivuctor", { required: true })} />
     
                         {(errors.door || errors.road || errors.flat) && <span className='error-class'>This field is required</span>}
 
@@ -41,29 +41,74 @@ const Shipping = () => {
                 <h6>From Gulshan Plaza Restaurant GPR Arriving in 20-30 min</h6>
                 <p>107 Rd No. 8</p>
 
-                {/* details start here  */}
+                {/* pro details sdivat here  */}
                 <div className="pro-details">
-                    {/* img start  */}
-                    <div className="pro-image-container">
+
+                    <div className="pro-image">
                         <img src={img} alt="product" />
-                    <div/>
-                    {/* img end  */}
-                    {/* detail start  */}
-                        <div className="pro-detail">
-                            <p>Butter Naun</p>
-                            <h6>$ 40</h6>
-                        </div>
-                        {/* detail end  */}
-                        {/* pro cal start  */}
-                        <div className='pro-cal'>
-                            <span className="pro-minus">-</span>
-                            <span className="pro-quantity">2</span>
-                            <span className="pro-plus">+</span>
-                        </div>
-                        {/* pro cal end  */}
                     </div>
+                    
+                    <div className="pro-detail">
+                        <div>
+                        <p style={{margin:"0px", padding:"0px"}}>Butter Naun</p>
+                        <h4 style={{color: "red",margin:"0px", padding:"0px"}}>$ 40</h4>
+                        </div>
+                    </div>
+
+                    <div className="pro-cal">
+                        <span className="pro-minus">-</span>
+                        <span className="pro-quantity">2</span>
+                        <span className="pro-plus">+</span>
+                    </div>
+
                 </div>
-                {/* detials end here  */}
+                {/* pro details end here  */}
+
+                {/* pro details sdivat here  */}
+                <div className="pro-details">
+
+                    <div className="pro-image">
+                        <img src={img} alt="product" />
+                    </div>
+                    
+                    <div className="pro-detail">
+                        <div>
+                        <p style={{margin:"0px", padding:"0px"}}>Butter Naun</p>
+                        <h4 style={{color: "red",margin:"0px", padding:"0px"}}>$ 40</h4>
+                        </div>
+                    </div>
+
+                    <div className="pro-cal">
+                        <span className="pro-minus">-</span>
+                        <span className="pro-quantity">2</span>
+                        <span className="pro-plus">+</span>
+                    </div>
+
+                </div>
+                {/* pro details end here  */}
+
+                <div className="last-section">
+                    <div className='table-grid'>
+                        <div className="general">
+                            <div>Subtotal</div>
+                            <div>$ 320</div>
+                        </div>
+                        <div className="general">
+                            <div>Tax</div>
+                            <div>$ 5.00</div>
+                        </div>
+                        <div className="general">
+                            <div>Delivery fee</div>
+                            <div>$ 2.00</div>
+                        </div>
+                        <hr />
+                        <div className="general">
+                            <div><h4>Total</h4></div>
+                            <div><h4>$ 327</h4></div>
+                        </div>
+                    </div>
+                    <button className='btn my-pro-btn'>Placeorder</button>
+                </div>
                 
             </div>
         </div>
