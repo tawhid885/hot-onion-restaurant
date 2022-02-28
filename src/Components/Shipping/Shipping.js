@@ -3,13 +3,22 @@ import { useForm } from 'react-hook-form';
 import "./Shipping.css";
 import useAuth from "./../../Hooks/useAuth";
 import img from "./../../img/logo.png";
+import { useNavigate } from 'react-router-dom';
 
 const Shipping = () => {
     const {user} = useAuth();
+    const navigate = useNavigate();
     console.log(user);
     const { register, handleSubmit , formState: { errors } } = useForm();
 
     const onSubmit = data => console.log(data);
+
+    // handle place order 
+    const handlePlaceOrder=()=>{
+        navigate("/placeorder");
+    }
+
+
     return (
         <div className='shipping'>
             <div className='shipping-form'>
@@ -107,7 +116,7 @@ const Shipping = () => {
                             <div><h4>$ 327</h4></div>
                         </div>
                     </div>
-                    <button className='btn my-pro-btn'>Placeorder</button>
+                    <button className='btn my-pro-btn' onClick={handlePlaceOrder}>Placeorder</button>
                 </div>
                 
             </div>

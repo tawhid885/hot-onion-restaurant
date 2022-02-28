@@ -7,16 +7,20 @@ const Menutitle = () => {
     const redirect_lunch = "/lunch";
     const redirect_dinner = "/dinner";
 
-    const breakfastControl=()=>{
+    const breakfastControl=(e)=>{
+        e.target.classList.add("selected")
         navigate(redirect_breakfast);
+       
     }
 
 
-    const lunchControl=()=>{
+    const lunchControl=(e)=>{
+        e.target.classList.add("selected")
         navigate(redirect_lunch);
     }
 
-    const dinnerControl=()=>{
+    const dinnerControl=(e)=>{
+        e.target.classList.add("selected")
         navigate(redirect_dinner);
     }
     return (

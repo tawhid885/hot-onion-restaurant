@@ -11,6 +11,7 @@ import Cart from './Components/Cart/Cart';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Footer from './Components/Footer/Footer';
 import Shipping from './Components/Shipping/Shipping';
+import Placeorder from './Components/Placeorder/Placeorder';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/details/:tag/:id" element={<Detail></Detail>}/>
         <Route path="/cart" element={<PrivateRoute><Cart></Cart></PrivateRoute>}/>
         <Route path="/shipping" element={<PrivateRoute><Shipping></Shipping></PrivateRoute>}/>
+        <Route path="/placeorder" element={<PrivateRoute><Placeorder></Placeorder></PrivateRoute>}/>
       </Routes>
       </BrowserRouter>
       <Footer></Footer>

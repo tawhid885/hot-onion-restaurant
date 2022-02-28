@@ -6,7 +6,6 @@
 .menu-title p{
     margin: 20px;
     transition: border, transform .6s ease-in-out;
-    border-bottom: 2px solid white;
     padding: 5px;
     cursor:pointer;
 }
@@ -16,6 +15,6 @@
     transform: scale(1.1);
 }
 
-.menu-title p:active{
+.selected{
     border-bottom: 2px solid red;
 }

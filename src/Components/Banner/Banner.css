@@ -1,8 +1,37 @@
 .banner{
-
+    background-image: url("./../../img/bannerbackground.png");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner img{
-    width: 100%;
-    height: 450px;
+.banner-info{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-search{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.banner-input{
+    width: 55%;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+}
+
+.banner-input:focus{
+    border: 2px solid red;
+}
+
+.my-banner-btn{
+    color: white;
+    background-color: red;
+    border-radius: 35px;
+    cursor: pointer;
 }

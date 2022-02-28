@@ -1,11 +1,19 @@
 import React from 'react';
 import "./Banner.css";
-import banner from "../../img/bannerbackground.png";
 
 const Banner = () => {
     return (
         <div className="banner">
-            <img src={banner} alt="banner goes here"/>
+            <div>
+                <div className='banner-info'>
+                    <h1>Best food waiting for your belly</h1>
+                </div>
+                <div className="banner-search">
+                <input type="text" className='banner-input'  placeholder='Search food items' />
+            <button className='btn my-banner-btn'>Search</button>
+                </div>
+            
+            </div>
         </div>
     );
 };
